@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/cropped-favicon-192x192.png" />
+  <title>DOM2 WebMentor</title>	
+  <meta name="description" content="DOM" />
+  <meta name="Author" content="Nnah Kenneth [www.techagentng.com]" />
+  <!-- mobile settings -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <!-- WEB FONTS : use %7C instead of | (pipe) -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+  <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+  <!-- CORE CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="center">
+    <div class="container mt-4">
+      <h1 class="display-4 text-center"><span class="text-primary">Book List</span></h1>
+  
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN</label>
+          <input type="text" id="isbn" class="form-control">
+        </div>
+        <input type="submit" class="btn btn-primary btn-block">
+      </form>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Athur</th>
+          <th>ISBN</th>
+        </tr>
+      </thead>
+
+      <tbody id="book-list"></tbody>
+    </table>
+  </div>
+  
+
+</body>
+    
+  <script src="anime-master/lib/anime.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
